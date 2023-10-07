@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./Timeline/css/style.css"> -->
+    <link rel="icon" href="./Timeline/img/icon.ico" type="image/x-icon">
+    <title>Timeline</title>
+  </head>
+  <body>
+    <main class="content">
+      <div class="container">
+        <div class="timeline">
+
+          <div class="modal_geolocation_warn">
+            <header class="warn_header">
+              Что-то пошло не так.
+            </header>
+            <div class="warn_text">
+              К сожалению, нам не удалось определить ваше местоположение. 
+              Пожалуйста, дайте разрешение на использование геолокации, 
+              либо введите координаты в ручную.
+            </div>
+            <form class="location_form">
+              <label class="input_label" for="geolocation_input">
+                Ширина и долгота через запятую.
+              </label>
+              <input 
+                class="geolocation_input" 
+                name="geolocation_input" 
+                type="text" 
+                required />
+              <div class="buttons">
+                <button type="button" class="button cancel_btn">Отмена</button>
+                <button type="button" class="button ok_btn">OK</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="posts">
+            <div class="line"></div>
+            <article class="post">
+              <div class="timeline_progress">
+                <div class="point"></div>
+              </div>
+              <div class="main_post">
+                <header class="timestamp">22:35 02.02.2020</header>
+                <div class="post_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi alias nam consequatur quibusdam aspernatur ratione exercitationem repellendus autem illum beatae at ullam quidem fugit dignissimos, incidunt praesentium maiores dolores quos.</div>
+                <div class="geolocation">
+                  <div class="coordinates">[34.34534  34.34535]</div>
+                  <div class="show_hide"></div>
+                </div>
+              </div>
+            </article>
+
+            <article class="post">
+              <div class="timeline_progress">
+                <div class="point"></div>
+              </div>
+              <div class="main_post">
+                <header class="timestamp">22:35 02.02.2020</header>
+                <div class="post_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi alias nam consequatur quibusdam aspernatur ratione exercitationem repellendus autem illum beatae at ullam quidem fugit dignissimos, incidunt praesentium maiores dolores quos.</div>
+                <div class="geolocation">
+                  <div class="coordinates">[34.34534  34.34534]</div>
+                  <div class="show_hide"></div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <div class="input_area">
+            <div class="input">
+              <textarea class="post_text_input"></textarea>
+              <div class="rec_buttons" >
+                <div class="btn rec_audio"></div>
+                <div class="btn rec_video"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+    <!-- <script src="./Timeline/js/app.js"></script> -->
+  </body>
+</html>
